@@ -12,3 +12,6 @@ def testAPI():
         })
     print(response)
     return response
+@app.route("/test")
+def checkMic():
+    return "<p>Hello, World!</p>"
