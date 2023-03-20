@@ -10,7 +10,7 @@ app = Flask(__name__)
 @app.route("/")
 def testAPI():
     return "<p>Hello, World!</p>"
-@app.route("/test",methods = ['GET'])
+@app.route("/test",methods = ['POST'])
 def checkMic():
     data = request.form['pngstring']
     png_index = data.find("data:image/png;base64")
