@@ -9,6 +9,7 @@ There's not many projects that do this so might be useful if you are using googl
 Run the following commands in your cloud console:
 - <code>git clone https://github.com/Adhikari-Ashutosh/backgooglevis/</code> - replace this with your own github link if you need to
 - <code>cd YOUR_DIR_NAME</code> - Navigate to the new folder
+- Add your API key of google services as key.txt (No spaces in API key)
 - <code>gcloud app deploy</code>
 ---
 # Linking structure:
