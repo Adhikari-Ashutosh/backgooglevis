@@ -24,5 +24,5 @@ Honestly, I didn't know react REST API's that well and I didn't want to risk exp
 as a service that helps me use my react application to trigger this service (hosted in a different place). Also wanted to learn about the Google app engine.
 ---
 
-# Thank you for Reading
+# Thank you for Reading!
 Lemme know if you have any doubts regarding this!
