@@ -2,3 +2,4 @@ Flask
 gunicorn
 pillow
 requests
+flask-cors

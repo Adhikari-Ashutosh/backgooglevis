@@ -4,13 +4,17 @@ from io import BytesIO
 from PIL import Image
 import requests 
 import json
+from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 # client = vision.ImageAnnotatorClient()
 @app.route("/")
 def testAPI():
     return "<p>Hello, World!</p>"
 @app.route("/test",methods = ['POST'])
+@cross_origin()
 def checkMic():
     data = request.form['pngstring']
     png_index = data.find("data:image/png;base64")
@@ -48,10 +52,11 @@ def checkMic():
     
     sr = r.json()
     winner = sr['responses'][0]['responses'][0]['labelAnnotations'][0]['description']
+    
     data = {
         'winner' : str(winner)
     }
-    return jsonify(winner)
+    return jsonify(data)
 
 
 
